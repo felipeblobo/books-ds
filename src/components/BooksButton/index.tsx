@@ -1,8 +1,12 @@
 import React from 'react';
 import { StyledButton } from './styles';
 
-const BooksButton = () => {
-  return <StyledButton>Primary Button</StyledButton>;
+type ButtonProps = {
+  title: string;
+};
+
+const BooksButton = ({ title }: ButtonProps) => {
+  return <StyledButton>{title}</StyledButton>;
 };
 
 export { BooksButton };
