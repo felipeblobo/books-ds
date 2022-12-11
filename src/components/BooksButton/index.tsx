@@ -1,12 +1,18 @@
 import React from 'react';
 import { StyledButton } from './styles';
 
-type ButtonProps = {
-  title: string;
+export type ButtonProps = {
+  title?: string;
+  kind?: 'primary' | 'secondary';
+  onClick?: () => void;
 };
 
-const BooksButton = ({ title }: ButtonProps) => {
-  return <StyledButton>{title}</StyledButton>;
+const BooksButton = ({ kind = 'primary', title, onClick }: ButtonProps) => {
+  return (
+    <StyledButton kind={kind} onClick={onClick}>
+      {title}
+    </StyledButton>
+  );
 };
 
 export { BooksButton };
