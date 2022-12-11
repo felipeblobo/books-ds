@@ -35,7 +35,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "books-ds",
+  "name": "books-ds-felipe",
   "author": "Felipe Lôbo",
   "module": "dist/books-ds.esm.js",
   "size-limit": [
