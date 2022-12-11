@@ -15,3 +15,4 @@ export const Thing: FC<Props> = ({ children }) => {
 };
 
 export * from './components/BooksButton';
+export * from './components/BooksCard';

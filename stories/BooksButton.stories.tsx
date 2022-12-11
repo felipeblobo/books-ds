@@ -8,6 +8,8 @@ export default {
   component: BooksButton,
 } as ComponentMeta<typeof BooksButton>;
 
-const Template: ComponentStory<typeof BooksButton> = () => <BooksButton />;
+const Template: ComponentStory<typeof BooksButton> = () => (
+  <BooksButton title="Primary" />
+);
 
 export const Primary = Template.bind({});
